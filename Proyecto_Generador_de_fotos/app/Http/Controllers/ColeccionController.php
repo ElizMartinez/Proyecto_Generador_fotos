@@ -126,6 +126,7 @@ class ColeccionController extends Controller
             $section->addText('Descripción: ' . $descripcion);
             $section->addTextBreak();
             $section->addTitle('Nombre Anejo: ' . $coleccion->nombre_coleccion, 1);
+            $section->addText('Índice', $collectionTitleStyle);
     
             $photoIndex = 1;
     
@@ -148,7 +149,7 @@ class ColeccionController extends Controller
     
                 $photoIndex++;
             }
-            $section->addText('Índice', $collectionTitleStyle);
+           
             $section->addTextBreak();
     
             foreach ($photoTitles as $index => $title) {
